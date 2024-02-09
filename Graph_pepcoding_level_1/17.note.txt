@@ -1,0 +1,6 @@
+topological sort
+- for every edge betweeen u->v
+- v must visited before u
+
+
+Edge is the matter

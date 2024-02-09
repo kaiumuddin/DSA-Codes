@@ -1,0 +1,1 @@
+{"name":"Local: 1","url":"g:\\CF_A\\DSA\\Tree_Binary_Search_Tree_Phitron\\1.insert_in_bst.cpp","tests":[{"id":1689517480362,"input":"20 10 30 -1 15 25 35 -1 -1 -1 -1 -1 -1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"g:\\CF_A\\DSA\\Tree_Binary_Search_Tree_Phitron\\1.insert_in_bst.cpp","group":"local","local":true}

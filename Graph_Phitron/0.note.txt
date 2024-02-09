@@ -1,0 +1,28 @@
+Graph(Direction)
+    - Directed
+    - Undirected
+Edge(Weight)
+    - Weighted
+    - Unweighted
+
+Tree (Speacial Graph)
+    - Only 1 Connected components 
+    - No Cycle or (Number of Edges = Number of vertex - 1), 
+    ( Edge = Vertex - 1)
+
+Representation ( Graph )
+    input
+        7 (node)(n)
+        12 (edge)(m)
+
+    1. Adjacency Matrix
+        - very dense graph
+        - vector<vector<int>> adjmatrix;
+        - int adjmatrix[n][n];
+    2. Adjacency List
+        - less edge / sparse graph
+        - vector<int> adjlist[n];
+    3. List of Edges
+
+Tree is a sparse graph
+e = v - 1

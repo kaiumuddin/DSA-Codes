@@ -1,0 +1,6 @@
+coin change 1
+    1. max ways : 
+    2. min coin : 
+
+unbound knapsack : subset sum = can you make
+unbound knapsack : count subset sum = how many ways

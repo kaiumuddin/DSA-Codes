@@ -1,0 +1,7 @@
+DP conditions
+1. Opitmal subsolution is there, like f(5) can  be solved by f(4) + f(3)
+2. Overlapping subproblem is present
+
+
+order does not matter = combination;
+order does     matter = permutation;

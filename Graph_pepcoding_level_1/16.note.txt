@@ -1,0 +1,4 @@
+MST
+- Subgraph
+- Tree ( Connected, Acyclic)
+- Spanning ( All vertices include)

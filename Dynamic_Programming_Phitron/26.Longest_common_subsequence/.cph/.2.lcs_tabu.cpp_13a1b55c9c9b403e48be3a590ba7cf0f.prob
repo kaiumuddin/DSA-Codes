@@ -1,0 +1,1 @@
+{"name":"Local: 2","url":"f:\\CF_A\\DSA\\Dynamic_Programming_Phitron\\26.Longest_common_subsequence\\2.lcs_tabu.cpp","tests":[{"id":1694369220775,"input":"abcdfgr\nacfdgr","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\CF_A\\DSA\\Dynamic_Programming_Phitron\\26.Longest_common_subsequence\\2.lcs_tabu.cpp","group":"local","local":true}

@@ -1,0 +1,25 @@
+BFS = V + E
+DFS = V + E
+BELL = V^3
+Floyd = V^3 , v^4 , V^2
+DSU = E log V , alpha(n)
+
+if node count is 10^600
+the DSU only 4 level needs
+
+DSU used for:
+isFriend(cm2, cm2) ?
+cycle exixt ?
+same component ?
+
+DSU Operatiion:
+1. Initialize 
+2. Find 
+    - Naive, 
+    - Optimized
+        - Path compression
+3. Union 
+    - Naive
+    - Optimized
+        - By Rank
+        - By Size

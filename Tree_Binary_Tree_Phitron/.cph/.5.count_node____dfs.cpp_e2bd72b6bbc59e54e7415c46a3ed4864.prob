@@ -1,0 +1,1 @@
+{"name":"Local: 5","url":"g:\\CF_A\\DSA\\Tree_Binary_Tree_Phitron\\5.count_node____dfs.cpp","tests":[{"id":1688976538778,"input":"10 20 60\n30 50 70 -1\n-1 40 -1 -1 -1\n80 -1 -1 -1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"g:\\CF_A\\DSA\\Tree_Binary_Tree_Phitron\\5.count_node____dfs.cpp","group":"local","local":true}

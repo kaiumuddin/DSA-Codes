@@ -1,0 +1,19 @@
+substring is variation of subsequence
+string : subsequence, substring
+array : subset, subarray
+
+subsequence: serial maintain, continuous not mandatory
+substring: contiguous mandatory
+
+
+Example 1: Substring
+Original string: "abcdefg"
+Substrings: "abc," "defg," "bcde," "efg," etc.
+
+In this example, substrings are formed by selecting a continuous sequence of characters from the original string.
+
+Example 2: Subsequence
+Original string: "abcdefg"
+Subsequences: "abc," "adg," "bdfg," "acg," "def," etc.
+
+In this example, subsequences are formed by selecting characters from the original string in the same order they appear, but without the requirement that they be contiguous. This means you can skip characters in between while maintaining the order.

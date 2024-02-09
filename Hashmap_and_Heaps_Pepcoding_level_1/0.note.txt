@@ -1,0 +1,23 @@
+cpp stl
+----------------------------------------------------------------
+hashing(bucket)
+    unordered_map
+    unordered_multimap
+    unordered_set
+    unordered_multiset
+
+binary search tree
+    map
+    multimap
+    set
+    multiset
+
+Heap(complete binary tree)
+    priority_queue: minHeap or maxHeap
+
+
+    
+----------------------------------------------------------------
+Faster (upper is faster)
+    unordered_set
+    set

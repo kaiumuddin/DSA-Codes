@@ -1,0 +1,17 @@
+DFS
+    - finding connected components
+BFS
+    - single source shortest path
+        - best on unweighted undirected, 
+            - only check number of edges
+        - fails on weighted undirected 
+        - finding unweighted graph shortest path
+Dijsktra
+    - single source shortest path
+        - best on weighted undirected graph
+        - Naive :       bfs(Q) + path relaxation
+        - Optimized :   bfs(PQ) + path relaxation
+        - fails on negative weight
+Bellman Ford
+    - finding weighted graph shortest path
+    - pass on negative weight

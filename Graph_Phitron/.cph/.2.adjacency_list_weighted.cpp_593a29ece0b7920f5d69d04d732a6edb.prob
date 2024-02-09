@@ -1,0 +1,1 @@
+{"name":"Local: 2","url":"f:\\CF_A\\DSA\\Graph_Phitron\\2.adjacency_list_weighted.cpp","tests":[{"id":1692003061931,"input":"4\n5\n1 2 8\n1 3 9\n2 4 11\n4 3 17\n3 2 15","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\CF_A\\DSA\\Graph_Phitron\\2.adjacency_list_weighted.cpp","group":"local","local":true}

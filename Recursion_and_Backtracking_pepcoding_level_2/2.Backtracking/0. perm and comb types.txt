@@ -1,0 +1,16 @@
+-no repeated elements
+    - permutation with for loop
+        - 20. Permutation 1
+    - combination with yes no
+        - 21. Combination 1
+    - permutation from combination with yes no
+        - 22. Permutation 2
+    - combination from permutation with for loop
+        - 23. Combination 2
+
+-repeated elements
+    -limited repeatation
+        - frequency array + unique set
+            - 24. Permutation Words 1
+    -unlimited repeatation
+        - no array + no unique set, unlimited loop on original array

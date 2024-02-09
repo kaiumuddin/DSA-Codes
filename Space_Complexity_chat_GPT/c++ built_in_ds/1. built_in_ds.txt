@@ -1,0 +1,29 @@
+Sure, here's a list of the built-in data structures in C++:
+
+1. Arrays
+2. Pointers
+3. References
+4. Structures
+5. Unions
+6. Classes
+7. Enumerations
+8. Strings (char arrays)
+9. Standard Template Library (STL) containers:
+  - std::vector
+  - std::list
+  - std::deque
+  - std::queue
+  - std::priority_queue
+  - std::stack
+  - std::set
+  - std::multiset
+  - std::map
+  - std::multimap
+  - std::unordered_set
+  - std::unordered_multiset
+  - std::unordered_map
+  - std::unordered_multimap
+  - std::bitset
+  - std::valarray
+
+Note that some of these data structures are built-in to the language (e.g. arrays and pointers), while others are part of the C++ Standard Library (e.g. the STL containers).

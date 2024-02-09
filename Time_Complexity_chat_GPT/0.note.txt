@@ -1,0 +1,42 @@
+TC          -> maximum n possible
+----------------------------------------------------------------
+constant        O (1)       ->
+logarithmic     O( log(n) ) -> n = 10^18 ; 1s
+square root     O( root(n) ) -> n = 10^14 ; 1s
+linear          O( n )      -> n = 10^7 ; 1s
+linearithmic    O( n log n) -> n = 2 * 10^7 ; 2s
+                            -> n = 1.6 * 10^5; 1s
+quadratic       O( n*n )    -> n = 10^3 ; 1s
+Cubic           O( n*m )    -> n,m = 10^3 ; 1s
+exponential     O( 2^n )
+
+----------------------------------------------------------------
+O( 1 )
+
+O( n )
+    - for(int i=0; i<N/2; i++)
+    - for(int i=1; i*2<=N; i++)
+
+O( root(n) )
+    - for (int i=1; i<=sqrt(n); i++)
+    - for(int i=0; i*i<n; i++)
+
+O( log(n) ) 
+    - for(int i=1; i<=N; i*=10)
+
+O( n log(n) )
+    - sort(a,a+n);
+    
+O( n^2 ) 
+    - for(int i = 0; i < n; i++){
+        for(int j = 0; j < n; j){
+            // task
+        }
+    }
+
+    n * (n - 1) /2
+    - for(int i = 0; i < n; i++){
+        for(int j = i + 1; j < n; j){
+            // task
+        }
+    } 
