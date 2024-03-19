@@ -4,7 +4,6 @@ using namespace std;
 const int N = 1e5 + 5;
 vector<int> adj[N];
 bool visited[N];
-int level[N];
 
 int inputGraph()
 {
@@ -32,6 +31,35 @@ int inputGraph()
     return n;
 }
 
+void dfs(int u)
+{
+    visited[u] = true;
+    for (int v : adj[u])
+    {
+        if (visited[v]) continue;
+        dfs(v);
+    }
+}
+
+void dfs_iterative(int s)
+{
+    stack<int> st;
+    st.push(s);
+
+    while (!st.empty())
+    {
+        int u = st.top();
+        st.pop();
+
+        visited[u] = true;
+
+        for (int v : adj[u]) {
+            if (visited[v]) continue;
+            st.push(v);
+        }
+    }
+}
+
 void bfs(int s)
 {
     queue<int> q;
@@ -41,37 +69,32 @@ void bfs(int s)
     {
         int u = q.front();
         q.pop();
-        // section 1 : Node
 
-        cout << u << " ";
         visited[u] = true;
-        level[s] = 0;
 
-        for (int v : adj[u])
-        {
-            // section 2 : Going to child
-            if (visited[v] == true) continue;
+        for (int v : adj[u]) {
+            if (visited[v]) continue;
             q.push(v);
-            level[v] = level[u] + 1;
-            // section 3 : returning from child
         }
-
-        // section 4 : returning from node
     }
 }
 
-void printLevel(int n) {
+void exploreAllComponents(int n)
+{
+    int cc = 0;
     for (int i = 1; i <= n; i++)
     {
-        cout << "Level of " << i << ": " << level[i] << endl;
+        if (visited[i]) continue;
+        // dfs(i);
+        dfs_iterative(i);
+        // bfs(i);
+        cc++;
     }
+    cout << "Num of connected component: " << cc << endl;
 }
 
 int main()
 {
     int n = inputGraph();
-    bfs(1);
-    printLevel(n);
+    exploreAllComponents(n);
 }
-
-// https://www.codingninjas.com/studio/problems/bfs-in-graph_973002?leftPanelTab=1

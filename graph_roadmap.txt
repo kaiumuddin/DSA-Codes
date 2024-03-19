@@ -1,0 +1,31 @@
+BFS
+- single source sp
+- Unweigted Undirected,
+- Unweigted directed,
+- Queue: O(v + e)
+
+Dijktra
+- single source sp
+- Weigted Undirected
+- Naive: Queue + path relaxation : O(v*v)
+- Optimized: PQueue + path relaxation : O(v + e log V)
+- fails on Negative weight
+
+Bellman-Ford Algorithm - Edge List
+- single source sp
+- weighted and unweighted
+- pass on negative edge weights
+- The shortest path cannot be found if there exists a negative cycle in the graph
+- Bellman-Ford is also capable of detecting negative cycles
+- V - 1 for loop : Shortest path
+- V for lopp : negative cycle detect
+- O(v * e)
+
+Floyd Warshall - adj matrix
+- all pair sp
+- Weigted directed, Weigted Undirected
+- positive and negative edge weights
+- O(V^3)
+- better for Dense Graphs and not for Sparse Graphs
+- does not work for the graphs with negative cycles
+- has a negative cycle if the distance from a vertex to itself is negative at the end of the algorithm
