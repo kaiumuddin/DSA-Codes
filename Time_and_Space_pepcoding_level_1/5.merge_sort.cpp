@@ -2,12 +2,6 @@
 using namespace std;
 
 
-// n element, n-1 iteration
-// reverse bubble
-
-// stable : sequence of same element is like previous
-// in place: no extra space
-// online : no
 vector<int> mergeTwoSortedArrays(vector<int>& a, vector<int>& b)
 {
     vector<int> res(a.size() + b.size());
@@ -28,7 +22,7 @@ vector<int> mergeTwoSortedArrays(vector<int>& a, vector<int>& b)
 
 vector<int> mergeSort(vector<int>& arr, int l, int r)
 {
-    if (l == r) {
+    if (l >= r) {
         vector<int> ba = { arr[l] };
         return ba;
     }
@@ -52,4 +46,6 @@ int main() {
     vector<int> res = mergeSort(a, 0, n);
 
     for (int i = 0; i < n; i++) cout << res[i] << " ";
+    cout << endl;
+    for (int i = 0; i < n; i++) cout << a[i] << " ";
 }

@@ -40,10 +40,32 @@ void dfs(int s)
     }
 }
 
+void dfs_iterative(int s)
+{
+    stack<int> st;
+    st.push(s);
+    visited[s] = true;
+
+    while (!st.empty())
+    {
+        int u = st.top();
+        st.pop();
+        cout << u << " ";
+
+        for (int v : g[u])
+        {
+            if (visited[v]) continue;
+            visited[v] = true;
+            st.push(v);
+        }
+    }
+}
+
 int main()
 {
     inputGraph();
     dfs(1);
+    // dfs_iterative(1);
 }
 
 // https://www.codingninjas.com/studio/problems/dfs-traversal_630462?leftPanelTab=0

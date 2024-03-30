@@ -36,6 +36,8 @@ void bfs(int s)
 {
     queue<int> q;
     q.push(s);
+    visited[s] = true;
+    level[s] = 0;
 
     while (!q.empty())
     {
@@ -44,14 +46,13 @@ void bfs(int s)
         // section 1 : Node
 
         cout << u << " ";
-        visited[u] = true;
-        level[s] = 0;
 
         for (int v : adj[u])
         {
             // section 2 : Going to child
             if (visited[v] == true) continue;
             level[v] = level[u] + 1;
+            visited[v] = true;
             q.push(v);
             // section 3 : returning from child
         }

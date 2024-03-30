@@ -45,17 +45,19 @@ void dfs_iterative(int s)
 {
     stack<int> st;
     st.push(s);
+    visited[s] = true;
+
 
     while (!st.empty())
     {
         int u = st.top();
         st.pop();
 
-        visited[u] = true;
 
         for (int v : adj[u]) {
             if (visited[v]) continue;
             st.push(v);
+            visited[v] = true;
         }
     }
 }
@@ -64,16 +66,16 @@ void bfs(int s)
 {
     queue<int> q;
     q.push(s);
+    visited[s] = true;
 
     while (!q.empty())
     {
         int u = q.front();
         q.pop();
 
-        visited[u] = true;
-
         for (int v : adj[u]) {
             if (visited[v]) continue;
+            visited[v] = true;
             q.push(v);
         }
     }

@@ -20,6 +20,7 @@ public:
                 r++;
         }
     }
+
     void best2(vector<int>& nums) {
         int writeIndex = 0;
         int n = nums.size();
