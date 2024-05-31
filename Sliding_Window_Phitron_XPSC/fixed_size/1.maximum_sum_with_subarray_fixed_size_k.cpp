@@ -1,22 +1,22 @@
-#include<bits/stdc++.h>
+ #include<bits/stdc++.h>
 using namespace std;
 
-// void brute(int a[], int n, int k)
-// {
-//     int mx = INT_MIN;
-//     for (int i = 0; i <= n - k; i++)
-//     {
-//         int s = 0;
-//         for (int j = i; j < i + k; j++)
-//         {
-//             s += a[j];
-//         }
-//         mx = max(mx, s);
-//     }
+void brute(int a[], int n, int k)
+{
+    int mx = INT_MIN;
+    for (int i = 0; i <= n - k; i++)
+    {
+        int s = 0;
+        for (int j = i; j < i + k; j++)
+        {
+            s += a[j];
+        }
+        mx = max(mx, s);
+    }
 
-//     cout << mx << endl;
-// }
-
+    cout << mx << endl;
+}
+ 
 void template1(int a[], int n, int k)
 {
     int mx = INT_MIN;
@@ -57,7 +57,7 @@ void template2(int a[], int n, int k)
     {
         s += a[r++];
     }
-    cout << r << endl;
+
     mx = max(mx, s);
 
     while (r < n)
@@ -77,7 +77,10 @@ int main() {
     int a[n];
     for (int i = 0; i < n; i++) cin >> a[i];
 
-    // brute(a, n, k);
-    template1(a, n, k);
-    template2(a, n, k);
+    brute(a, n, k);
+    // template1(a, n, k);
+    // template2(a, n, k);
 }
+// 6 3
+// 5 2 1 6 3 4
+// 
