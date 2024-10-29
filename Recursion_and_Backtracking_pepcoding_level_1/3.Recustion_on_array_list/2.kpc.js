@@ -26,7 +26,7 @@ const kpce = (str) => {
     return ans;
 };
 
-console.log(kpce("2"));
+// console.log(kpce("2"));
 
 ///////////////////////////////////////////
 // curr + child
@@ -47,5 +47,5 @@ const kpc = (str) => {
     return ans;
 };
 
-console.log(kpc(""));
+console.log(kpc("12"));
 
